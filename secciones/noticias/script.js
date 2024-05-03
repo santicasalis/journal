@@ -119,7 +119,7 @@ function cargarNoticias() {
 
     let imagen = document.createElement("img");
     imagen.src = noticia.imagen;
-    imagen.alt = "imagen";
+    imagen.alt = noticia.categoria;
     imagen.setAttribute("style", "width: 300px; height: auto;");
 
     let titulo = document.createElement("h3");
@@ -161,7 +161,7 @@ function mostrarDetalleNoticia(noticia) {
 </style>
       <h2>${noticia.titulo}</h2>
       <p> ${noticia.categoria}</p>
-       <img src="${noticia.imagen}" alt="imagen">
+       <img src="${noticia.imagen}" alt="imagen de  ${noticia.categoria}">
       <h4> ${noticia.resumen}</h4>
       <p> ${noticia.contenido}</p>
      

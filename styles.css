@@ -33,7 +33,9 @@ nav {
   background-color: aquamarine;
 }
 
-.noticias {
-  height: 50vh;
-  background-color: blueviolet;
+h2 {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
 }
