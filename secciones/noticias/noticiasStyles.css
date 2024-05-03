@@ -1,3 +1,22 @@
 h2 {
-  color: yellow;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.noticiasContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.noticiaContainer {
+  padding: 2rem;
+}
+
+.noticiaContainer:hover {
+  transform: scale(1.1);
 }

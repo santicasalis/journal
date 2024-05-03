@@ -17,7 +17,7 @@ nav {
   display: flex;
   color: white;
   justify-content: space-around;
-  margin: 1rem;
+  margin: 1, 5rem;
 }
 .navLinks li {
   list-style: none;
