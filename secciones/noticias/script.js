@@ -125,11 +125,50 @@ function cargarNoticias() {
     let titulo = document.createElement("h3");
     titulo.textContent = noticia.titulo;
 
+    noticiaContainer.addEventListener("click", function () {
+      mostrarDetalleNoticia(noticia);
+    });
+
     noticiaContainer.appendChild(categoria);
     noticiaContainer.appendChild(imagen);
     noticiaContainer.appendChild(titulo);
     noticiasContainer.appendChild(noticiaContainer);
   });
+}
+
+function mostrarDetalleNoticia(noticia) {
+  var detalleWindow = window.open("", "DetalleNoticia", "width=600,height=400");
+
+  var detalleHTML = `
+  <style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+  }
+  h2 {
+      color: #333;
+  }
+  p {
+      margin-bottom: 10px;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+  }
+</style>
+      <h2>${noticia.titulo}</h2>
+      <p> ${noticia.categoria}</p>
+       <img src="${noticia.imagen}" alt="imagen">
+      <h4> ${noticia.resumen}</h4>
+      <p> ${noticia.contenido}</p>
+     
+      </div>
+    `;
+
+  detalleWindow.document.body.innerHTML = detalleHTML;
 }
 
 window.onload = cargarNoticias;

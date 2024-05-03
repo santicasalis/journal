@@ -20,3 +20,7 @@ h2 {
 .noticiaContainer:hover {
   transform: scale(1.1);
 }
+
+.noticiaDetalle {
+  background-color: red;
+}
