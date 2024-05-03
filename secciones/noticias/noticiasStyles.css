@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
   margin: 2rem;
 }
 
@@ -16,4 +17,10 @@
 
 .noticiaDetalle {
   background-color: red;
+}
+
+@media (max-width: 768px) {
+  .noticiasContainer {
+    justify-content: center;
+  }
 }
