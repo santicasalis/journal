@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navLinks {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.navLinks li {
+  list-style: none;
+}
+.navLinks li a {
+  text-decoration: none;
+  margin: 1rem;
+  color: white;
+}
+
+.portada {
+  height: 30vh;
+  background-color: aquamarine;
+}
+
+.noticias {
+  height: 50vh;
+  background-color: blueviolet;
+}
