@@ -3,36 +3,10 @@ body {
   font-family: Arial, sans-serif;
   height: 100vh;
 }
-
-nav {
-  background-color: #333;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.navLinks {
-  display: flex;
-  color: white;
-  justify-content: space-around;
-  margin: 1rem, 5rem;
-}
-.navLinks li {
-  list-style: none;
-}
-.navLinks li a {
-  text-decoration: none;
-  margin: 1rem;
-  color: white;
-}
-
 .portada {
   height: 30vh;
   background-color: aquamarine;
 }
-
 h2 {
   color: red;
   text-align: center;
@@ -40,25 +14,169 @@ h2 {
   font-size: xx-large;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-  }
+/* estilo navegador */
+.NavContainer {
+  background-color: rgba(70, 70, 70, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+}
+.NavContainer a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
 
-  .navLinks {
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 1rem;
-  }
-  .navLinks li {
-    text-decoration: none;
+/* //etilo para el logo del navigador */
+.logo {
+  width: auto;
+  height: 100%;
+  margin-right: 2%;
+  margin-left: 40%;
+  z-index: 2;
+}
+/* //estilos para los linck */
+a {
+  color: black;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.fondoMenu{
+position: absolute;
+top: -700px;
+left: -1000px;
 
-    margin-top: 5px;
+width: 100%;
+height: 85%;
+transition:all .6s ease;
+}
+.fondoMenu.active{
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  border-radius: 0 0 80% 0;
+  z-index: 1;
 
-    color: white;
+}
+.lincks {
+  position: absolute;
+  top: -700px;
+  left: -2000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition:all .6s ease;
+
+}
+.lincks a{
+
+  font-size: 2rem;
+  display: block;
+&:hover{
+  font-weight: bold;
+}
+}
+.lincks.active {
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+
+}
+.lincks.active a{
+  color: white ;
+  font-size: 2rem;
+  margin-top: 1rem;
+
+  
+}
+
+@media (min-width: 760px) {
+  .botonHamburguesa {
+      display: none;
   }
+  .lincks{
+      position: initial;
+      margin: 0;
+  }
+  .lincks a{
+      font-size: 1.2rem;
+      color: white;
+      display: inline;
+  }
+}
+
+/* estilosapra el boton hamburguesa */
+/* nav-icon-5 */
+.nav-icon-5 {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 2;
+}
+
+.nav-icon-5 span {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms;
+  z-index: 2;
+}
+
+.nav-icon-5 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.nav-icon-5 span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+  opacity: 1;
+}
+
+.nav-icon-5 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+  transform: rotate(-3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+  transform: rotate(3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+  transform: rotate(-4deg) scaleY(1.1);
+}
+
+.nav-icon-5.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+
+.nav-icon-5.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-icon-5.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
 }
