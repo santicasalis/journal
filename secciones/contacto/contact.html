@@ -34,7 +34,58 @@
         
         </nav> 
     </header>
-    <h2>Contacto</h2>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <hr>
+            <br>
+            <form action="">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="name" id="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Apellido:">Apellido:</label>
+                    <input type="text" name="sourname" id="Apellido:" required>
+                </div>
+                <br>
+                <div>
+                    <label for="fn">Fecha de Nacimiento:</label>
+                    <input type="date" name="fn" id="fn" required>
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="15" max="65" required>
+                </div>
+                <br>
+                <div>
+                    <p>Seleccione su Genero</p>
+                    <input type="radio" name="area" id="F" value="Femenino">
+                    <label for="F">Femenino</label>
+                    <input type="radio" name="area" id="M" value="Masculino">
+                    <label for="M">Masculino</label>
+                    <input type="radio" name="area" id="O" value="otro">
+                    <label for="O">otro</label>
+                </div>
+                <br>
+                <div>
+                    <label for="comentario">Comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="40" rows="5"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                
+                
+            </form>
+        </section>
+        
+
+    </main>
+    
 
 <script src="../../script.js"></script>
 </body>
