@@ -20,6 +20,10 @@
 .noticiaDetalle {
   background-color: red;
 }
+.categoria-noticia {
+  color :#ca3d38;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .noticiasContainer {
