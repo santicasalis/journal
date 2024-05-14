@@ -209,6 +209,10 @@ a {
     color: white;
     display: inline;
   }
+ 
+
+
+ 
 }
 
 /* estilosapra el boton hamburguesa */
@@ -280,4 +284,20 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Aquí puedes definir los estilos específicos para dispositivos móviles */
+  .carousel {
+    
+    height: 100%;
+  }
+  #noticias{
+    justify-content: center;
+    margin-right: 5rem;
+  }
+}
+.noticiaContainer {
+  margin: 0 auto;
 }
