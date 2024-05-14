@@ -7,9 +7,6 @@ Title :#752a27
 subtitulo : #ca3d38
 
 
-
-
-
 */
 
 
@@ -54,7 +51,7 @@ body {
   }
 }
 
-/* Efecto de cambio de color */
+
 .portada h1 {
   margin: 1rem;
   transition: color 0.3s ease;
