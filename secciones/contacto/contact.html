@@ -37,59 +37,77 @@
         
         </nav> 
     </header>
-    <main>
-        <section>
-            <h2>Contacto</h2>
-            <hr>
-            <br>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="name" id="nombre" required>
-                </div>
-                <br>
-                <div>
-                    <label for="Apellido:">Apellido:</label>
-                    <input type="text" name="sourname" id="Apellido:" required>
-                </div>
-                <br>
-                <div>
-                    <label for="fn">Fecha de Nacimiento:</label>
-                    <input type="date" name="fn" id="fn" required>
-                </div>
-                <br>
-                <div>
-                    <label for="edad">Edad:</label>
-                    <input type="number" name="edad" id="edad" min="15" max="65" required>
-                </div>
-                <br>
-                <div>
-                    <p>Seleccione su Genero</p>
-                    <input type="radio" name="area" id="F" value="Femenino">
-                    <label for="F">Femenino</label>
-                    <input type="radio" name="area" id="M" value="Masculino">
-                    <label for="M">Masculino</label>
-                    <input type="radio" name="area" id="O" value="otro">
-                    <label for="O">otro</label>
-                </div>
-                <br>
-                <div>
-                    <label for="comentario">Comentario:</label>
-                    <textarea name="comentario" id="comentario" cols="40" rows="5"></textarea>
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-                
-                
-            </form>
-        </section>
+    <main id="padre">
         
-
-    </main>
-    
-
+        <form action="" class="formulario" id="formulario">
+            <h2>Contacto</h2>
+            <div class="formulari_grupo" id="grupo_usuario">
+                    <label for="name" class="formulario_label">Nombre y apellido:</label>
+                    <div class="formulario_grupo_input">
+                        <input type="text" class="formulario_input" name="name" id="name">
+                        <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="error_input">No use numeros</p>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_usuario">
+                    <label for="email" class="formulario_label">Correo Electronico:</label>
+                        <div class="formulario_grupo_input">
+                            <input type="email" class="formulario_input" name="email" id="email">
+                            <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                        </div>
+                </div>
+                <br>
+                <div class="formulari_grupo" id="grupo_usuario">
+                    <div class="nacimiento">
+                        <label for="fn" class="formulario_label">Fecha de Nacimiento:</label>
+                        <input type="date" class="reason" name="fn" id="fn" required>
+                    </div>
+                </div>            
+                <div class="formulari_grupo" id="grupo_usuario">
+                    <label for="area" class="formulario_label">Seleccione su Genero:</label>
+                    <div class="reason">
+                        <input type="radio" name="area" id="F" value="Femenino">
+                        <label for="F">Femenino</label>
+                        <input type="radio" name="area" id="M" value="Masculino">
+                        <label for="M">Masculino</label>
+                        <input type="radio" name="area" id="O" value="otro">
+                        <label for="O">otro</label>
+                    </div>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_usuario">
+                    <label for="reason" class="formulario_label">Seleccione una opcion:</label>
+                    <select id="reason"  class="reason" name="reason" aria-label="Motivo de contacto">
+                        <option value="">Selecciona....</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Comentario">Comentario</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                      </select>
+                </div>
+                <div class="formulari_grupo" id="grupo_usuario">
+                    <label for="comentario" class="formulario_label">Comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="45" rows="5"></textarea>
+                </div>
+                <div class="formulari_grupo" id="teminos">
+                    <label class="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto terminos y condiciones
+                    </label>
+                </div>
+                <div class="formulario_msj" id="formulario_msj">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor complete el formulario correctamente</p>
+                </div>
+                <div class="formulari_grupo formulario_enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="formulario_exito">Formulario Enviado</p>
+                </div>
+            </form>
+        </main>
+    <footer>
+     
+    </footer>
+ <script src="https://kit.fontawesome.com/e229c24ae0.js" crossorigin="anonymous"></script>       
 <script src="../../script.js"></script>
 </body>
 </html>
