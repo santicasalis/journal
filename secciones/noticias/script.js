@@ -173,15 +173,3 @@ function mostrarDetalleNoticia(noticia) {
 
 window.onload = cargarNoticias;
 
-
-const carouselInner = document.querySelector(".carousel-inner");
-const slides = document.querySelectorAll(".carousel-inner img");
-const totalSlides = slides.length;
-let currentIndex = 0;
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-setInterval(nextSlide, 3000);

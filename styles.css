@@ -7,9 +7,6 @@ Title :#752a27
 subtitulo : #ca3d38
 
 
-
-
-
 */
 
 
@@ -17,15 +14,11 @@ subtitulo : #ca3d38
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  height: 100vh;
+ 
   background-color: #efe9f4;
 }
 .portada {
   text-align: center;
-  /* background-image: url(https://images.unsplash.com/photo-1484482340112-e1e2682b4856?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNwb3J0c3xlbnwwfDB8MHx8fDA%3D);
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   margin: 0 auto;
   height: 70%;
   width: 90%;
@@ -33,20 +26,53 @@ body {
   font-size: xx-large;
   font-weight: 900;
   font-family: "Merienda", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.portada h1{
+  transform: perspective(500px) rotateX(40deg);
+  margin:1rem;
+  
+}
+.portada h1 {
+  margin: 1rem;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+
+.portada h1 {
+  margin: 1rem;
+  transition: color 0.3s ease;
+}
+
+.portada h1:hover {
+  color: red;
 }
 .carousel {
   overflow: hidden;
   width: 80%;
+  height: 70vh;
 }
 
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease;
-}
+.noticias h2 {
+  color: #752a27;
+  text-align: center;
 
-.carousel-inner img {
-  width: 80%;
-  height: 50vh;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: "Merienda", cursive;
 }
 
 h2 {
@@ -57,6 +83,7 @@ h2 {
   font-weight: 900;
   font-family: "Merienda", cursive;
 }
+
 
 /* estilo navegador */
 .NavContainer {
@@ -107,6 +134,34 @@ a {
   border-radius: 0 0 80% 0;
   z-index: 1;
 }
+
+.noticias{
+  margin: 2rem;
+}
+#noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2rem;
+  
+}
+.noticiaContainer {
+  margin: 1rem;
+}
+
+#noticias h3{
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 6px;
+
+  
+}
 .lincks {
   position: absolute;
   top: -700px;
@@ -154,6 +209,10 @@ a {
     color: white;
     display: inline;
   }
+ 
+
+
+ 
 }
 
 /* estilosapra el boton hamburguesa */
@@ -225,4 +284,20 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .carousel {
+    
+    height: 100%;
+  }
+  #noticias{
+    justify-content: center;
+    margin-right: 5rem;
+  }
+}
+.noticiaContainer {
+  margin: 0 auto;
 }
