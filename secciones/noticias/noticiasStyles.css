@@ -26,7 +26,8 @@
 }
 
 @media (max-width: 768px) {
-  .noticiasContainer {
+  .noticiaContainer {
     justify-content: center;
+    margin: 0 auto
   }
 }
