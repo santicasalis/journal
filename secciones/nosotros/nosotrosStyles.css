@@ -1,4 +1,41 @@
-.nosotros {
-    
-    height: 90vh;
+
+.contenido-nosotros {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px; 
+}
+
+.contenido-nosotros p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.integrante {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.integrante h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.integrante a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#752a27;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.integrante a:hover {
+    background-color:#8e211d;
 }

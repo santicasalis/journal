@@ -15,3 +15,8 @@ document.querySelector('.botonHamburguesa').addEventListener('click', function()
         navlincksElemento.classList.toggle('active');
     }
 });
+
+// fecha actual del footer
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("año").innerHTML = new Date().getFullYear();
+});
