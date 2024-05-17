@@ -31,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  background-color: #fff
 }
 .portada h1{
   transform: perspective(500px) rotateX(40deg);
@@ -140,6 +141,7 @@ a {
 
 .noticias{
   margin: 2rem;
+  background-color: #fff
 }
 #noticias {
   display: flex;
