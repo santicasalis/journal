@@ -34,11 +34,83 @@
             </div>
             <div class="fondoMenu">
             </div>
-        
         </nav> 
     </header>
-    <h2>Contacto</h2>
-
+    <main id="padre">
+        <h2>Contacto</h2>
+        <form action="" class="formulario" id="formulario" novalidate>
+               <h3>Formulario De Contacto</h3> 
+            <div class="formulari_grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario_label">Nombre y apellido:</label>
+                    <div class="formulario_grupo_input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre">
+                        <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="error_input">Error: Tiene que ser de 4 a 40 digitos y no puede contener numeros y simbolos. </p>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_email">
+                    <label for="email" class="formulario_label">Correo Electronico:</label>
+                        <div class="formulario_grupo_input">
+                            <input type="email" class="formulario_input" name="email" id="email">
+                            <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <p class="error_input">Error: Tiene que contener (@) y (.com ) </p>
+                </div>
+                <br>
+                <div class="formulari_grupo" id="grupo_fn">
+                    <div class="nacimiento">
+                        <label for="fn" class="formulario_label">Fecha de Nacimiento:</label>
+                        <input type="date" class="reason" name="fn" id="fn" required>
+                    </div>
+                </div>            
+                <div class="formulari_grupo" id="grupo_selecc">
+                    <label for="area" class="formulario_label">Seleccione su Genero: <small>(opcional)</small></label required>
+                    <div class="reason">
+                        <input type="radio" name="area" id="F" value="Femenino">
+                        <label for="F">Femenino</label>
+                        <input type="radio" name="area" id="M" value="Masculino">
+                        <label for="M">Masculino</label>
+                        <input type="radio" name="area" id="O" value="otro">
+                        <label for="O">otro</label>
+                    </div>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_opcion">
+                    <label for="reason" class="formulario_label" >Seleccione una opcion: <small>(opcional)</small>  </label>
+                    <select id="reason"  class="reason" name="reason" aria-label="Motivo de contacto">
+                        <option value="">Selecciona....</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Comentario">Otro</option>
+                      </select>
+                </div>
+                <div class="formulari_grupo" id="grupo_comentario">
+                    <label for="comentario" class="formulario_label">Comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="45" rows="5" placeholder="opcional..."></textarea>
+                </div>
+                <br>
+                <div class="formulari_grupo" id="teminos">
+                    <label class="reason">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto terminos y condiciones
+                    </label>
+                </div>
+                <br>
+                <div class="formulario_msj" id="formulario_msj">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Complete el formulario</p>
+                </div>
+                <div class="formulari_grupo formulario_enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="formulario_exito" id="formulario_exito">Formulario Enviado</p>
+                </div>
+            </form>
+        </main>
+    <footer>
+     
+    </footer>
+ <script src="https://kit.fontawesome.com/e229c24ae0.js" crossorigin="anonymous"></script>       
 <script src="../../script.js"></script>
+<script src="formulario.js"></script>
 </body>
 </html>

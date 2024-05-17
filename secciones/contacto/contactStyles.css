@@ -1,3 +1,179 @@
+
+*{
+  box-sizing: border-box;
+  
+}
+#padre{
+  
+  font-family: "roboto", sans-serif;
+  background: url(/journal/contacto_deportes.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0px 35px 0px;
+  margin: 0;  
+}
+.main{
+  font-family: "roboto", sans-serif;
+  background: rgb(232, 187, 175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 h2 {
   color: red;
+}
+h3 { 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 30px; 
+  margin: 15px;
+}
+.formulario{
+
+  gap: 20px;
+  background-color: #efe9f4;
+  border-radius: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,25);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  min-height: 320px;
+  padding-bottom: 15px;
+  
+}
+.formulari_grupo{
+  background-color: #efe9f4;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.formulario_label{
+  background-color: #efe9f4;
+  border: none;
+  margin: 8px 0;
+  padding: 3px 15px;
+  font-size: 20px;
+  border-radius: 12px;
+  font-weight: 700;
+ 
+}
+.formulario_grupo_input{
+  position: relative;
+  width: 75%;
+}
+
+.formulario_input{
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  border-radius: 8px;
+  height: 25px;
+  line-height: 0px;
+  padding: 0 40px 0 10px;
+  font-size: 15px;
+  transition: 1s ease all;
+}
+.formulario_input:focus{
+  border: 1px solid black;
+  outline: none;    
+}
+.error_input{
+  font-size: 14px;
+  margin-bottom: 0;
+  display: none;
+  margin: 5px 10%;
+  color: #bb2929;
+}
+.error_input-activo{
+  display: block;
+  
+}
+.formulario_validacion_grupo{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+.formulario_msj{
+  height: 35px;
+  margin: 0 5%;
+  line-height: 35px;
+  background: red;
+  padding: 0 10px;
+  border-radius: 5px;
+  display: none;
+}
+.formulario_msj p{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+.formulario_msj-activo{
+  display: block;
+}
+.formulario_enviar{
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+}
+.formulario_btn{
+  height: 45px;
+  line-height: 10px;
+  width: 30%;
+  background: #111010;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .1s ease all ;
+  font-size: 17px;
+}
+.formulario_exito{
+  font-size: 16px;
+  color: #119200;
+  font-weight: bold;
+  display: none;
+}
+.formulario_exito-activo{
+  display: block;
+}
+
+.formulari_grupo-correcto .formulario_validacion_grupo{
+  color: #119200;
+  opacity: 1;
+}
+.formulari_grupo-correcto .formulario_label{
+  color: #119200;
+
+}
+.formulari_grupo-correcto .formulario_input{
+  border: 2px solid #119200;
+
+}
+.formulari_grupo_incorrect .formulario_label{
+  color: #bb2929;
+}
+.formulari_grupo_incorrect .formulario_validacion_grupo{
+  color: #bb2929;
+  opacity: 1;
+}
+.formulari_grupo_incorrect .formulario_input{
+  border: 2px solid #bb2929;
+}
+.reason{
+  font-size: 15px;
 }
